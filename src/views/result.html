@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}
+    <title>Result</title>
+{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="/styles/result.css">
+{% endblock styles %}
+
+{% set pageId = "page-result" %}
+    {% block content %}
+
+        <div class="content">
+
+            <header>
+                Result
+            </header>
+
+            <h2>
+               {{valor}}
+            </h2>
+
+        </div>
+    
+    {% endblock content %}
+
+
+{% block scripts %}
+{% endblock scripts %}

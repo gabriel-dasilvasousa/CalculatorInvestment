@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/home.css">
+{% endblock styles %}
+{% set pageId = "page-home" %}
+
+    {% block content %}
+            <div class="content">
+                <header>
+                    <h1>Calculate Investment</h1>
+                </header>
+
+                <form action="/result.html" method="POST">
+                    <fieldset>
+                        <div class="field-group">
+                            <div class="field">
+                                <label for="Inicial Value">Inicial Value</label>
+                                <input type="number" name="inicialValue" placeholder="$" required="required">
+                            </div>
+
+                            <div class="field">
+                                <label for="Month Value">Monthly Value</label>
+                                <input type="number" name="monthlyValue" placeholder="$" required="required">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            <h3>Lenght of Investment</h3>
+                            <h3>years</h3>
+                        </legend>
+                        <div class="items-grid">
+                            <li data-id="10">
+                                <span>10</span>
+                            </li>
+                            <li data-id="15">
+                                <span>15</span>
+                            </li>
+                            <li data-id="20">
+                                <span>20</span>
+                            </li>
+                            <li data-id="30">
+                                <span>30</span>
+                            </li>
+                            <li data-id="40">
+                                <span>40</span>
+                            </li>
+                            <input type="hidden" name="years" required="required">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="field-group">
+                            <label for="Interest Rate">Interest Rate</label>
+                            <input type="number" name="interestRate" placeholder="%" step="0.001">
+                            <button type="submit">Calculate</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+    {% endblock content %}
+
+{% block scripts %}
+    <script src="/scripts/home.js"></script>
+{% endblock scripts %}
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+#page-home{
+    height: 100vh;
+}
+
+#page-home .content{
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#page-home .content header h1{
+    font-size: 30px;
+    color: var(--title-color);
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+form fieldset{
+    border: 0;
+}
+
+form .field-group{
+    display: flex;
+    flex-direction: column;
+}
+
+form .field-group .field{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form .field-group label{
+    font-size: 11px;
+    color: #9494a3;
+    margin-bottom: 8px;
+}
+
+form input,
+form select{
+    border-radius: 12px;
+    padding: 16px 24px;
+    border: 1px solid #d5d6d8;
+    outline: 0;
+}
+
+form legend {
+    font-size: 11px;
+    color: #9494a3;
+    margin-bottom: 8px;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    gap:12px;
+}   
+
+.items-grid li{
+    list-style: none;
+    background-color: #f0f0f5;
+
+    border: 1px solid #d5d6d8;
+    border-radius: 10px;
+    height:30px;
+    width: 40px;
+    margin: 0;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.items-grid li.selected{
+    background: rgb(149, 133, 253);
+    border: 2px solid #9494a3;
+}
+
+form button{
+    margin-top: 35px;
+    padding: 18px;
+    border-radius: 8px;
+    background: #191970;
+    color: white;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.items-grid li span {
+    pointer-events: none;
+}

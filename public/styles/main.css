@@ -1,0 +1,23 @@
+:root {
+    --title-color: #191970;
+    --primary-color: #00FFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+    background: #F8F8FF;
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    text-decoration: none;
+}
