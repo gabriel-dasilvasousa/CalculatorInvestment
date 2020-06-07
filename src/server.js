@@ -19,13 +19,14 @@ server.get("/", (req,res) => {
 })
 
 server.post("/result.html", (req,res) => {
-    rate = req.body.interestRate/100
-    inV = req.body.inicialValue
-    mV = req.body.monthlyValue
-    y = req.body.years * 12
+    const rate = req.body.interestRate/100
+    const inV = req.body.inicialValue
+    const mV = req.body.monthlyValue
+    const y = req.body.years * 12
+    const VAcum = (mV*y)    
     const valor = fv(rate, inV, mV, y)
-    console.log(valor)
-    return res.render("result.html", {valor})
+    const interest = (valor-VAcum)
+    return res.render("result.html", {valor, VAcum, interest})
 })
 
 function fv(taxa, valorAtual, mensalidade, periodo){

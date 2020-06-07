@@ -16,7 +16,7 @@ function handleItemSelected(event){
     itemLi.classList.toggle("selected")
 
     const itemId = itemLi.dataset.id
-    console.log(itemId)
+    // console.log(itemId)
     collectedYears.value = itemId
     
 }
