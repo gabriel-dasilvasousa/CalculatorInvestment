@@ -19,11 +19,11 @@ server.get("/", (req,res) => {
 })
 
 server.post("/result.html", (req,res) => {
-    const rate = req.body.interestRate/100
-    const inV = req.body.inicialValue
-    const mV = req.body.monthlyValue
-    const y = req.body.years * 12
-    const VAcum = (mV*y)    
+    const rate = parseFloat(req.body.interestRate/100)
+    const inV = parseFloat(req.body.inicialValue)
+    const mV = parseFloat(req.body.monthlyValue)
+    const y = parseInt(req.body.years * 12)
+    const VAcum = (mV*y) + inV    
     const valor = fv(rate, inV, mV, y)
     const interest = (valor-VAcum)
     return res.render("result.html", {valor, VAcum, interest})

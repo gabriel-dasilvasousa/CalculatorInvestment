@@ -16,12 +16,19 @@
                         <div class="field-group">
                             <div class="field">
                                 <label for="Inicial Value">Inicial Value</label>
-                                <input type="number" name="inicialValue" placeholder="$" required="required">
+                                <div class="row">
+                                    <span>$</span>
+                                    <input type="number" name="inicialValue" required="required">
+                                </div>
+                                
                             </div>
 
                             <div class="field">
                                 <label for="Month Value">Monthly Value</label>
-                                <input type="number" name="monthlyValue" placeholder="$" required="required">
+                                <div class="row">
+                                    <span>$</span>
+                                    <input type="number" name="monthlyValue" required="required">
+                                </div>
                             </div>
                         </div>
                     </fieldset>
@@ -53,8 +60,11 @@
 
                     <fieldset>
                         <div class="field-group">
-                            <label for="Interest Rate">Interest Rate</label>
-                            <input type="number" name="interestRate" placeholder="%" step="0.001">
+                            <label for="Interest Rate">Monthly Interest Rate</label>
+                             <div class="row">
+                                <span>%</span>
+                                <input type="number" name="interestRate" step="0.001">
+                            </div>
                             <button type="submit">Calculate</button>
                         </div>
                     </fieldset>
@@ -63,7 +73,7 @@
     {% endblock content %}
 
 {% block scripts %}
-    <script src="/scripts/home.js"></script>
+    <script src="/scripts/home.js"></script>  
 {% endblock scripts %}
 
 </body>

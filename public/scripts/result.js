@@ -1,16 +1,10 @@
-var ctx = document.getElementById("myChart").getContext("2d");
-var valor = document.querySelector("input[id=total]");
-var v2 = document.querySelector("input[id=acumulate]");
-var v3 = document.querySelector("input[id=interest]");
+const ctx = document.getElementById("myChart").getContext("2d");
 
-var total = valor.value;
-var acumulate = v2.value;
-var interest = v3.value;
+const total = document.querySelector("input[id=total]").value
+const acumulate = document.querySelector("input[id=acumulate]").value
+const interest = document.querySelector("input[id=interest]").value
 
-// console.log(parseFloat(total).toLocaleString(undefined, {maximumFractionDigits: 2, minimumFractionDigits:2}))
-// console.log(parseFloat(total).toFixed(2), parseFloat(acumulate).toFixed(2), parseFloat(interest).toFixed(2))
-
-var myChart = new Chart(ctx, {
+const myChart = new Chart(ctx, {
         type: 'doughnut',
 
         data: {
@@ -18,7 +12,7 @@ var myChart = new Chart(ctx, {
             datasets: [{
                 label: 'Values',
                 backgroundColor: ['purple', 'rgb(255,102,102)'],
-                borderColor: 'grey',
+                borderColor: 'rgb(79,47,79)',
                 data: [parseFloat(acumulate).toFixed(2), parseFloat(interest).toFixed(2)]
             }]
         },
@@ -35,5 +29,7 @@ var myChart = new Chart(ctx, {
         }
 });
 
-
+const btn = document.querySelector("button[id=return]").onclick = function(){
+    location.href="/";
+}
 

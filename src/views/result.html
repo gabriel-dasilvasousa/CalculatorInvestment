@@ -2,6 +2,7 @@
 {% block title %}
     <title>Result</title>
 {% endblock title %}
+
 {% block styles %}
 <link rel="stylesheet" href="/styles/result.css">
 {% endblock styles %}
@@ -15,7 +16,7 @@
 
             <h2>$ {{valor.toLocaleString(undefined, {maximumFractionDigits: 2, minimumFractionDigits:2})}}</h2>
             <canvas id="myChart"></canvas>
-            <button><a href="/">Recalculated</a></button>
+            <button id="return">Recalculate</button>
         </div>
         <input id="total" type="hidden" value="{{valor}}">
         <input id="acumulate" type="hidden" value="{{VAcum}}">
@@ -29,3 +30,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
     <script src="/scripts/result.js"></script>
 {% endblock scripts %}
+

@@ -38,6 +38,21 @@ form .field-group .field{
     margin-bottom: 20px;
 }
 
+form .field-group .field .row {
+    display:flex;
+}
+
+form .field-group .field .row span{
+    border-radius: 8px 0 0 8px;
+    padding: 8px;
+    color: white;
+    background-color: var(--title-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+}
+
 form .field-group label{
     font-size: 11px;
     color: #9494a3;
@@ -46,7 +61,7 @@ form .field-group label{
 
 form input,
 form select{
-    border-radius: 12px;
+    border-radius: 0 12px 12px 0;
     padding: 16px 24px;
     border: 1px solid #d5d6d8;
     outline: 0;
@@ -85,8 +100,27 @@ form legend {
 }
 
 .items-grid li.selected{
-    background: rgb(149, 133, 253);
-    border: 2px solid #9494a3;
+    background: var(--title-color);
+    border: 1px solid #9494a3;
+}
+
+.items-grid li.selected span{
+    color:white;
+}
+
+.field-group .row{
+    display:flex;
+}
+
+.field-group .row span{
+    border-radius: 8px 0 0 8px;
+    padding: 8px;
+    color: white;
+    background-color: var(--title-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
 }
 
 form button{
