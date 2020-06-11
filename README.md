@@ -2,7 +2,7 @@
 
 This calculator use a equation of compoused interest with monthly contributions, this program use the data submitted by form
 for calculate how much money this user will have.
-![Screenshot from 2020-06-10 23-52-16](https://user-images.githubusercontent.com/54194379/84340480-3a8d0600-ab77-11ea-89ba-db646049a6af.png)
+![Screenshot from 2020-06-11 18-23-10](https://user-images.githubusercontent.com/54194379/84440623-b5eec600-ac10-11ea-9029-3dc36c24a736.png)
 
 
 ## Installation
@@ -31,9 +31,9 @@ npm install
 
 Write the data in the form after press Calculate
 
-![Screenshot from 2020-06-10 23-56-52](https://user-images.githubusercontent.com/54194379/84340884-1ed62f80-ab78-11ea-9c5d-41885c52a9f2.png)
+![Screenshot from 2020-06-11 18-23-22](https://user-images.githubusercontent.com/54194379/84440657-c43ce200-ac10-11ea-9a44-06c70f961807.png)
 
-![Screenshot from 2020-06-10 23-56-58](https://user-images.githubusercontent.com/54194379/84340904-2ac1f180-ab78-11ea-978a-f936b419e8a7.png)
+![Screenshot from 2020-06-11 18-23-28](https://user-images.githubusercontent.com/54194379/84440682-ce5ee080-ac10-11ea-8524-9405d4d6acd6.png)
 
 ## Start to Server
 >Into the folder of program, open a terminal
@@ -45,7 +45,11 @@ npm start
 
 ## Release History
 
-* 0.0.1
+ * 1.0
+   * Version with some errors
+ * 1.1
+   * Version with new styles and fix errors
+ * 1.2
     * Work in progress
 
 ## Where find me
