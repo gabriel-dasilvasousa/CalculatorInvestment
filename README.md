@@ -48,9 +48,9 @@ npm start
 * 0.0.1
     * Work in progress
 
-## Meta
+## Where find me
 
-[@gabriel-dasilvasousa](https://linkedin.com/gabriel-dasilvasousa)
+[@gabriel-dasilvasousa](https://www.linkedin.com/in/gabriel-dasilvasousa/)
 
 
-[https://github.com/gabriel-dasilvasousa/CalculatorInvestment](https://github.com/gabriel-dasilvasousa/)
+[https://github.com/gabriel-dasilvasousa/](https://github.com/gabriel-dasilvasousa/)
